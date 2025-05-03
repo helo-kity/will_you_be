@@ -1,0 +1,100 @@
+.backgroundImage {
+
+    height: 100vh;
+  }
+
+.body_main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body_main h1 {
+  padding: 4rem;
+}
+
+.card {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.card_1 {
+  background-color: #DCAE96;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.card_2 {
+  background-color: #014421;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.card_3 {
+  background-color: #580F41;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.card_4 {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.card_5 {
+  background-image: url("../../public/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+
+/* CSS */
+.button_89 {
+  margin: 2rem;
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button_89:hover,
+.button_89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button_89:active {
+  background: var(--color);
+  color: #fff;
+}
