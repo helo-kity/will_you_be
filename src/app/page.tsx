@@ -63,7 +63,7 @@ export default function Home() {
             className={`${styles.card} ${styles.card_1}`}
           >
             <h1>Hi Lina :)</h1>
-            <img src="/shy_hi.gif" /> 
+            <img src="/shy_hi.gif" alt="Shy waving hi gif" /> 
           </div>
 
       </Carousel.Item>
@@ -73,7 +73,7 @@ export default function Home() {
           className={`${styles.card} ${styles.card_2}`}
         >
             <h1>You're looking pretty today (tho you look pretty everyday)</h1>
-            <img src="/shrek_rizz.gif" />
+            <img src="/shrek_rizz.gif" alt="Shrek rizz gif" />
             <p>rizz rizz</p>
           </div>
       </Carousel.Item>
@@ -83,7 +83,7 @@ export default function Home() {
           className={`${styles.card} ${styles.card_3}`}
         >
             <h1>I just wanted to let you know that I really like you a lot</h1>
-            <img src="/shy.gif" />
+            <img src="/shy.gif" alt="Shy gif" />
           </div>
       </Carousel.Item>
 
@@ -92,7 +92,7 @@ export default function Home() {
             className={`${styles.card} ${styles.card_4}`}
           >
             <h1>And I guess I made this cause I wanted to ask...</h1>
-            <img src="/cute_rolling.gif" />
+            <img src="/cute_rolling.gif" alt="cute rolling" />
           </div>
       </Carousel.Item>
 
@@ -103,7 +103,7 @@ export default function Home() {
             {
               yesPressed ? (
                 <>
-                  <img src="yay.gif" />
+                  <img src="yay.gif" alt="yay gif" />
                   <h1>WOOOOOO!!! ;))</h1>
                 </>
               ) : (
@@ -112,12 +112,12 @@ export default function Home() {
                     noCount > 3 ? (
                       <>
                         <h1>FOREVER ALONE :(</h1>
-                        <img src="/last.gif" />
+                        <img src="/last.gif" alt="last gif"/>
                       </>
                     ) : (
                       <>
                         <h1>Will you be my girlfriend?</h1>
-                        <img src={noCount > 0 ? getNoGifs() : "/will_you.gif"} />
+                        <img src={noCount > 0 ? getNoGifs() : "/will_you.gif"} alt="alternating gif" />
                       </>
                     )
                   }
