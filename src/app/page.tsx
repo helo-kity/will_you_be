@@ -72,7 +72,7 @@ export default function Home() {
        <div
           className={`${styles.card} ${styles.card_2}`}
         >
-            <h1>You're looking pretty today (tho you look pretty everyday)</h1>
+            <h1>You&apos;re looking pretty today (tho you look pretty everyday)</h1>
             <img src="/shrek_rizz.gif" alt="Shrek rizz gif" />
             <p>rizz rizz</p>
           </div>
